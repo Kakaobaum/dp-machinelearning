@@ -20,4 +20,4 @@ with st.expander('Data'):
 
 #"species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
 with st.expander('Visualizations'):
-  st.scatter_chart(data=df,x = 'bill_length_mm', y = 'body_mass_g', color = species)
+  st.scatter_chart(data=df,x = 'bill_length_mm', y = 'body_mass_g', color = 'species')
