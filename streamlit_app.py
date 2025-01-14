@@ -5,15 +5,17 @@ st.title('We ♥️ Machine Learning')
 
 st.info('Deploy Python ML models with Streamlit')
 
+#importing Data
 with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_cleaned.csv')
   df
 
+  # model parameters(training data)
   st.write('**X**')
   X = df.drop('species', axis=1)
   X
-
+  # We will predict the species
   st.write('**Y**')
   Y = df.species
   Y
@@ -39,6 +41,12 @@ with st.sidebar:
         'flipper_length_mm': flipper_length_mm,
         'body_mass_g': body_mass_g,
         'gender': gender}
+  #input parameters
   input_df = pd.DataFrame(data, index=[0])
-  
-input_df
+  input_penguins = pd.concat([input_df, X], axis = 0)
+
+with st.expander('Input features'):
+  st.write('**Input penguin**')
+  input_df
+  st.write('**Conbined Pinguin Data**')
+  input_penguins
