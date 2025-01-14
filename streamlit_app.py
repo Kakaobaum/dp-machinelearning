@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title('🎈 App Name')
+st.title('We ♥️ Machine Learning')
 
-st.write('Hello world!')
+st.write('Deploy Python ML models with Streamlit')
