@@ -50,3 +50,5 @@ with st.expander('Input features'):
   input_df
   st.write('**Conbined Pinguin Data**')
   input_penguins
+
+#Encode
