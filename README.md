@@ -18,51 +18,30 @@ In this exercise, students will deploy a machine learning model using Streamlit 
 1. Load the iris dataset.
 2. Collect user input for features.
 3. Train and use a `RandomForestClassifier` for predictions.
----
+
+✍️ complete the TODOs in class_exercise.py
+
+--
 
 ### Step-by-Step Instructions:
 
 1. **Import Necessary Libraries**
    - Start by importing `streamlit`, `pandas`, `numpy`, and `RandomForestClassifier` from `sklearn.ensemble`.
 
-2. **Set Application Title an write you Name in the info**
+2. **Set Application Title**
    - Add a title and description to the Streamlit app:
-     ```python
-     st.title('Iris Classification 🌸')
-     st.info('Classify Iris species with a Machine Learning model')
-     ```
 
 3. **Load and Display the Dataset**
-   - Load the Iris dataset from the provided URL:
-     ```python
-     load the dataset from https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/iris.csv in a        dataframe called df
-     st.write('**Iris Dataset**')
-     st.write(df)
-     ```
+   - Load the Iris dataset from the provided URL: https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/iris.csv
 
 4. **Set Up User Input (Sidebar)**
-   - create a sidebar and Collect feature values from the user using sliders:
-         sepal_length min 4.3, max 7.9
-         sepal_width min 2.0, max 4.4
-         petal_length min 1.0, max 6.9
-         petal_width min 0.1, max 2.5
-     !! don't forget to add default values between min and max
-add the following
-```python
-         input_data = {
-             'sepal_length': sepal_length,
-             'sepal_width': sepal_width,
-             'petal_length': petal_length,
-             'petal_width': petal_width
-         }
-         input_df = pd.DataFrame(input_data, index=[0])
-     ```
+   - Collect feature values from the user using sliders and dropdowns:
 
 5. **Data Preparation**
    - Separate features (X) and target labels (Y):
      ```python
-     X = df.drop('Species', axis=1)
-     Y = df['Species']
+     X = df.drop('species', axis=1)
+     Y = df['species']
      ```
 
    - Encode target labels:
@@ -87,25 +66,3 @@ add the following
 
 8. **Display Results**
    - Show prediction probabilities and the predicted species:
-     ```python
-     st.write('**Prediction Probabilities**')
-     prob_df = pd.DataFrame(prediction_proba, columns=['Setosa', 'Versicolor', 'Virginica'])
-     st.write(prob_df)
-```
-# Display the predicted species
-     add subheader - Predicted species
-     ```python
-     species_mapping = {0: 'Setosa', 1: 'Versicolor', 2: 'Virginica'}
-     ```
-     output of the prediction
-     
-
----
-
-### Deliverables for Students:
-- A fully functional Streamlit app that can classify iris species based on user input.
-
----
-
-### Exercise Goal:
-Students learn how to load data, create a machine learning pipeline, collect user inputs, and display predictions using Streamlit in under 10 minutes!
