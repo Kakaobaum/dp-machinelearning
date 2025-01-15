@@ -95,7 +95,6 @@ prediction_prob = clf.predict_proba(input_row)
 # Display prediction probabilities
 df_prediction_prob = pd.DataFrame(prediction_prob)
 df_prediction_prob.columns = ['Adelie', 'Chinstrap', 'Gentoo']  # Add species labels as columns
-st.info('And now with a nice visualization')
 
 # Display probabilities as a styled dataframe
 st.dataframe(df_prediction_prob,
