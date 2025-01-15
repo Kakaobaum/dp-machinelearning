@@ -18,7 +18,8 @@ In this exercise, students will deploy a machine learning model using Streamlit 
 2. Collect user input for features.
 3. Train and use a `RandomForestClassifier` for predictions.
 
-✍️ complete the TODOs in class_exercise.py
+✍️ complete the TODOs in class_exercise.py 
+please delete the triple-quoted strings when you reach the code lines that instruct to do so 
 
 --
 
