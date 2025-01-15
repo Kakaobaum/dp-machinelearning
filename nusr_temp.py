@@ -46,6 +46,7 @@ st.write('**Prediction Probabilities**')
 prob_df = pd.DataFrame(prediction_proba, columns=['Setosa', 'Versicolor', 'Virginica'])
 st.write(prob_df)
 
+
 st.subheader('Predicted Species')
 species_mapping = {0: 'Setosa', 1: 'Versicolor', 2: 'Virginica'}
 st.success(species_mapping[prediction[0]])
