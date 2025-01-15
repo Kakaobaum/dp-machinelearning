@@ -16,10 +16,10 @@ In this hands-on session, you will learn how to create and deploy a machine lear
 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 
 # 🗂 Folder structure: 
-nusr_temp.py is the finished class_exercise with solution.
-class_exercise.py is the template for the class_exercise
-streamlit_app_done.py is the finished live hands-on coding.
-requirements.txt are the dependencies
+- nusr_temp.py is the finished class_exercise with solution.
+- class_exercise.py is the template for the class_exercise
+- streamlit_app_done.py is the finished live hands-on coding.
+- requirements.txt are the dependencies
 
 Link for Datasets: https://github.com/dataprofessor/data by dataprofessor 🤓.
 
