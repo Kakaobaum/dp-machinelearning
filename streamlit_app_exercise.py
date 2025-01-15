@@ -20,16 +20,16 @@ with st.sidebar:
     petal_width = st.slider('Petal Width (cm)', 0.1, 2.5, 1.3)
 
     input_data = {
-        'sepal_length': sepal_length,
-        'sepal_width': sepal_width,
-        'petal_length': petal_length,
-        'petal_width': petal_width
+        'Sepal.Length': sepal_length,
+        'Sepal.Width': sepal_width,
+        'Petal.Length': petal_length,
+        'Petal.Width': petal_width
     }
     input_df = pd.DataFrame(input_data, index=[0])
 
 # Data preparation
-X = df.drop('species', axis=1)
-Y = df['species']
+X = df.drop('Species', axis=1)  # Correct column name
+Y = df['Species']  # Correct column name
 target_mapping = {'setosa': 0, 'versicolor': 1, 'virginica': 2}
 Y_encoded = Y.map(target_mapping)
 
