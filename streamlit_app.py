@@ -61,7 +61,7 @@ input_row = df_penguins[:1]
 X = df_penguins[1:]
 
 #Encode Y
-target_mapper = {'Adelie':'Adelie','Chinstrap':'Chinstrap','Gentoo':'Gentoo'}
+target_mapper = {'Adelie':0,'Chinstrap':1,'Gentoo':2}
 def target_encode(val):
   return target_mapper[val]
 
@@ -77,9 +77,10 @@ with st.expander('Data preparation'):
 # Model training and inference
 ## Train the ML model
 clf = RandomForestClassifier()
-clf.fit(X,Y_raw)
+clf.fit(X,Y)
 
 ##Apply model to make predictions
 prediction = clf.predict(input_row)
 prediction_prob = clf.predict_proba(input_row)
+prediction_prob.columns=['Adelie','Chinstrap','Gentoo']
 prediction_prob
