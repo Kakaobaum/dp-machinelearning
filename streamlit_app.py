@@ -88,6 +88,31 @@ prediction_prob = clf.predict_proba(input_row)
 df_prediction_prob = pd.DataFrame(prediction_prob)
 df_prediction_prob.columns=['Adelie','Chinstrap','Gentoo']
 df_prediction_prob
+st.info('And now with a nice visualisation')
+st.dataframe(df_prediction_prob,
+column_config={
+  'Adelie':st.column_config.ProgressColumn(
+    'Adelie',
+    format='%f',
+    width = 'medium',
+    min_value = 0,
+    max_value=1
+  ),
+  'Chinstrap':st.column_config.ProgressColumn(
+    'Chinstrap',
+    format='%f',
+    width = 'medium',
+    min_value = 0,
+    max_value=1
+  ),
+  'Gentoo':st.column_config.ProgressColumn(
+    'Gentoo',
+    format='%f',
+    width = 'medium',
+    min_value = 0,
+    max_value=1
+  )
+}, hide_index=True)
 
 #display predicted Species
 st.subheader('Predicted Species')
