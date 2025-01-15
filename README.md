@@ -7,4 +7,5 @@ provided with ♥️ by dataprofessor.
 
 Check out Dataprofessor on Youtube for great machine learning tutorials: 
 
-https://www.youtube.com/@DataProfessor ![image](https://github.com/user-attachments/assets/57c2faf6-8063-4fb1-9058-b8274defe223) 
+![image](https://github.com/user-attachments/assets/57c2faf6-8063-4fb1-9058-b8274defe223) 
+https://www.youtube.com/@DataProfessor 
