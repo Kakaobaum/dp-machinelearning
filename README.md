@@ -2,6 +2,20 @@
 ```
 Workshop 8: Deploy Python ML models with Streamlit 🥳
 ```
+
+Welcome to the **Deploy Python ML Models with Streamlit** workshop! 🎉
+
+In this hands-on session, you will learn how to create and deploy a machine learning model using Python and the powerful **Streamlit** framework. We will guide you step-by-step to build an interactive web app that predicts the species of penguins based on their physical characteristics. 
+
+### What You’ll Learn:
+1. **Building ML Models**: Understand the basics of training a RandomForestClassifier with Python.
+2. **Interactive Data Visualizations**: Learn to create dynamic visualizations with Streamlit.
+3. **User-Friendly Interfaces**: Build a clean and interactive interface to collect user input.
+4. **Deploy Your App**: See how easy it is to share your ML model with the world using Streamlit.
+
+🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+
+
 Link for Datasets: https://github.com/dataprofessor/data by dataprofessor 🤓.
 
 Check out Dataprofessor on Youtube for great machine learning tutorials: 
