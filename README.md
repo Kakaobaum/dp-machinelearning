@@ -2,7 +2,7 @@
 ```
 Workshop 8: Deploy Python ML models with Streamlit 🥳
 ```
-Links for Datasets: https://github.com/dataprofessor/data
+Link for Datasets: https://github.com/dataprofessor/data
 provided with ♥️ by dataprofessor.
 
 Check out Dataprofessor on Youtube for great machine learning tutorials: 
