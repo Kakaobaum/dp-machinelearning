@@ -15,6 +15,11 @@ In this hands-on session, you will learn how to create and deploy a machine lear
 
 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 
+# 🗂 Folder structure: 
+nusr_temp.py is the finished class_exercise with solution.
+class_exercise.py is the template for the class_exercise
+streamlit_app_done.py is the finished live hands-on coding.
+requirements.txt are the dependencies
 
 Link for Datasets: https://github.com/dataprofessor/data by dataprofessor 🤓.
 
@@ -24,7 +29,7 @@ Check out Dataprofessor on Youtube for great machine learning tutorials:
 
 https://www.youtube.com/@DataProfessor 
 
-Recipe:
+## 🧁 Recipe:
 1. Sign up on GitHub
 2. Sign up on https://streamlit.io/
 3. Connect streamlit with Github
@@ -36,7 +41,7 @@ pandas
 scikit-learn
 6. create app in Stremlit
 7. Deploy an app from GitHub
-8. Edit streamlit_app.py
+8. Edit streamlit_app.py (in our case streamlit_app_done)
 10. Import the dataset
 11. data preparation
 12. from sklearn.ensemble import RandomForestClassifier: https://scikit-learn.org/stable/index.html
