@@ -2,6 +2,7 @@
 # add code here...
 
 # TODO: Set personalized application title an write your name in the info
+st.title('technikum-wien 🪨')
 # add code here...
 
 # TODO: Load and display dataset from https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/iris.csv as a dataframe
