@@ -13,12 +13,12 @@ with st.expander('Data'):
 
   # model parameters(training data)
   st.write('**X**')
-  X = df.drop('species', axis=1)
-  X
+  X_raw = df.drop('species', axis=1)
+  X_raw
   # We will predict the species
   st.write('**Y**')
-  Y = df.species
-  Y
+  Y_raw = df.species
+  Y_raw
 
 #"species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
 with st.expander('Visualizations'):
@@ -43,7 +43,7 @@ with st.sidebar:
         'sex': gender}
   #input parameters
   input_df = pd.DataFrame(data, index=[0])
-  input_penguins = pd.concat([input_df, X], axis = 0)
+  input_penguins = pd.concat([input_df, X_raw], axis = 0)
   
 
 #Encode X
@@ -52,6 +52,7 @@ df_penguins=pd.get_dummies(input_penguins,prefix=encode)
 input_row = df_penguins[:1]
 
 #Encode Y
+target_mapper = {'Adelie':0,'Chinstrap':1,'Gentoo':2}
 
 with st.expander('Input features'):
   st.write('**Input penguin**')
