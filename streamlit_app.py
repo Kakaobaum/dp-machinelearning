@@ -91,5 +91,5 @@ df_prediction_prob
 
 #display predicted Species
 st.subheader('Predicted Species')
-penguins_species = np.array([Adelie,Chinstrap,Gentoo])
-st.success(str(penguins_species[prediction]))
+penguins_species = np.array(['Adelie','Chinstrap','Gentoo'])
+st.success(str(penguins_species[prediction][0]))
