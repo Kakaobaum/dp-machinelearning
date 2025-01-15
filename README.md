@@ -37,7 +37,7 @@ please delete the triple-quoted strings when you reach the code lines that instr
 4. **Set Up User Input (Sidebar)**
    - Collect feature values from the user using sliders and dropdowns:
 
-5. **Data Preparation**
+5. **Data Preparation(already done)**
    - Separate features (X) and target labels (Y):
      ```python
      X = df.drop('species', axis=1)
@@ -50,14 +50,14 @@ please delete the triple-quoted strings when you reach the code lines that instr
      Y_encoded = Y.map(target_mapping)
      ```
 
-6. **Train the RandomForest Model**
+6. **Train the RandomForest Model(already done)**
    - Initialize and train the model:
      ```python
      clf = RandomForestClassifier()
      clf.fit(X, Y_encoded)
      ```
 
-7. **Make Predictions**
+7. **Make Predictions(already done)** 
    - Predict species based on user input:
      ```python
      prediction = clf.predict(input_df)
