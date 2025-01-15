@@ -49,7 +49,7 @@ Classification/random forest
 13. prediction
 
 
-### Class Exercise: Building a Streamlit App with the Iris Dataset
+### 🧠 Class Exercise: Building a Streamlit App with the Iris Dataset
 
 #### Objective:
 In this exercise, students will deploy a machine learning model using Streamlit to classify iris species. The exercise will guide students to:
