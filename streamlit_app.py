@@ -27,13 +27,13 @@
     #st.write(Y_raw)
 
 # Step 4: Add a visualization
-with st.expander('Visualizations'):
+#with st.expander('Visualizations'):
     # TODO: Add a scatter chart to visualize the data
     # # add code here...
 
 # Step 5: Create a sidebar for user inputs
-with st.sidebar:
-    st.header('Input features')
+#with st.sidebar:
+    #st.header('Input features')
     # TODO: Add feature inputs (selectbox for island, selectbox for gender, sliders for bill length(min. 32.1,max 59.6, default value))
     # island = add code here...
     # gender = add code here...
@@ -55,7 +55,7 @@ with st.sidebar:
     # input_penguins = pd.concat([input_df, X_raw], axis=0)
 
 # Step 6: Show user inputs
-with st.expander('Input features'):
+#with st.expander('Input features'):
     # TODO: Display user inputs and combined data
     # st.write('**Input penguin**')
     # st.write(input_df)
