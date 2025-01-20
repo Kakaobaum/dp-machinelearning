@@ -7,15 +7,19 @@ from sklearn.ensemble import RandomForestClassifier
 import streamlit as st
 import os
 
-# Embed the video from the URL
+# Video URL
 video_url = "https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/hero-video.mp4"
-st.video(video_url)
 
+# HTML code for autoplay and loop
 video_html = f"""
 <video width="100%" height="auto" autoplay loop muted>
     <source src="{video_url}" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+"""
+
+# Display the video
+st.markdown(video_html, unsafe_allow_html=True)
 
 # Display the video
 st.markdown(video_html, unsafe_allow_html=True)
