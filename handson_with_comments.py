@@ -18,6 +18,12 @@ if os.path.exists(readme_file):
 else:
     st.error("presentation.md file not found!")
 
+# Embed the video from the URL
+video_url = "https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/hero-video.mp4"
+st.video(video_url)
+
+# Additional text or description
+st.markdown("Watch this short video to learn more about Streamlit! 🚀")
 
 # Import necessary libraries:
 # - Streamlit for the web application interface.
