@@ -11,6 +11,16 @@ import os
 video_url = "https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/hero-video.mp4"
 st.video(video_url)
 
+video_html = f"""
+<video width="100%" height="auto" autoplay loop muted>
+    <source src="{video_url}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+# Display the video
+st.markdown(video_html, unsafe_allow_html=True)
+
+
 # Path to the presentation.md file
 readme_file = "presentation.md"
 
