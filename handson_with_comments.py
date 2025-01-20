@@ -21,6 +21,9 @@ video_html = f"""
 # Display the video
 st.markdown(video_html, unsafe_allow_html=True)
 
+# Additional description
+st.markdown("©streamlit.io")
+
 # Path to the presentation.md file
 readme_file = "presentation.md"
 
