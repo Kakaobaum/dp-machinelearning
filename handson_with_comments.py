@@ -3,6 +3,22 @@ import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
+
+import streamlit as st
+import os
+
+# Path to the presentation.md file
+readme_file = "presentation.md"
+
+# Read and render the README content
+if os.path.exists(readme_file):
+    with open(readme_file, "r", encoding="utf-8") as file:
+        readme_content = file.read()
+    st.markdown(readme_content, unsafe_allow_html=True)
+else:
+    st.error("presentation.md file not found!")
+
+
 # Import necessary libraries:
 # - Streamlit for the web application interface.
 # - Pandas for handling and manipulating data.
