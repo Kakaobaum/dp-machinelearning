@@ -21,10 +21,6 @@ video_html = f"""
 # Display the video
 st.markdown(video_html, unsafe_allow_html=True)
 
-# Display the video
-st.markdown(video_html, unsafe_allow_html=True)
-
-
 # Path to the presentation.md file
 readme_file = "presentation.md"
 
