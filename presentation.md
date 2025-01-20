@@ -50,7 +50,7 @@ pandas
 scikit-learn
 6. create app in Stremlit
 7. Deploy an app from GitHub
-8. Edit streamlit_app.py (in our case streamlit_app_done)
+8. Edit streamlit_app.py (or add your own)
 10. Import the dataset
 11. data preparation
 12. add features
